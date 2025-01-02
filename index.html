@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and PDF Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .banner {
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: red;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .download-btn {
+            background-color: red;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        Funeral Service of Mpho Kenneth Senooane
+    </div>
+
+    <!-- Display the picture -->
+    <img src="image/screen.jpg" alt="Display Image">
+
+    <!-- Download button -->
+    <div class="button-container">
+        <a href="image/program.pdf" download="program">
+            <button class="download-btn">Download PDF</button>
+        </a>
+    </div>
+</body>
+</html>
